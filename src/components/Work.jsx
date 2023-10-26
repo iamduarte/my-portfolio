@@ -8,13 +8,15 @@ export default function Work() {
   const works = [
     {
       title: "PR Manager Portfolio Website",
-      description: "A portfolio website for a PR Manager",
+      description:
+        "A portfolio website for a PR Manager who works in the tech industry, made with Vite, React, TailwindCSS, and deployed on Firebase.",
       image: "/syanmey2.png",
       url: "https://www.syanmey.com/",
     },
     {
       title: "HelpUkraineHub",
-      description: "A centralized fundraising platform for Ukraine",
+      description:
+        "A centralized fundraising platform for Ukraine with the goal of gathering as many campaigns as possible in the same place so users can easily browse through them and filter out which ones they want to support based in their purposes, this project was intended to help me get experience with a full-stack project. It was made with React, TailwindCSS, Next.js, MongoDB, and deployed on Firebase. The project is still in development as all de data base implementation is still missing.",
       image: "/helpukrainehub.png",
       url: "https://helpukrainehub-cd14b.web.app/",
     },
@@ -23,11 +25,15 @@ export default function Work() {
   const openModal = (title, description, image, url) => {
     setModalData({ title, description, image, url });
     setIsModalOpen(true);
+    // Prevent scrolling
+    document.body.style.overflow = "hidden";
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setModalData({});
+    // Allow scrolling
+    document.body.style.overflow = "auto";
   };
 
   return (
