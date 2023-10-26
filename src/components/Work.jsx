@@ -41,11 +41,11 @@ export default function Work() {
       <div className="hero min-h-screen">
         <div className="hero-overlay bg-orange-950 bg-opacity-40"></div>
         <div className="mask2 bg-customBgColor w-full h-full flex items-center lg:justify-evenly flex-col lg:flex-row justify-center">
-          <h1 className="text-gray-300 text-6xl  text-center">
+          <h1 className="text-gray-300 text-6xl  text-center px-5">
             Some of my work
           </h1>
           <p
-            className="text-gray-300 text-2xl mt-8 pb-6 cursor-pointer"
+            className="text-gray-300 text-2xl mt-20 lg:mt-8 pb-6 cursor-pointer"
             onClick={() =>
               openModal(
                 works[0].title,
@@ -58,7 +58,7 @@ export default function Work() {
             PR Manager Portfolio Website
           </p>
           <p
-            className="text-gray-300 text-2xl mt-8 pb-6 cursor-pointer"
+            className="text-gray-300 text-2xl lg:mt-8 pb-6 cursor-pointer"
             onClick={() =>
               openModal(
                 works[1].title,
