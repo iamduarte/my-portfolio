@@ -9,7 +9,7 @@ export default function Work() {
     {
       title: "PR Manager Portfolio Website",
       description: "A portfolio website for a PR Manager",
-      image: "/syanmey.png",
+      image: "/syanmey2.png",
       url: "https://www.syanmey.com/",
     },
     {
