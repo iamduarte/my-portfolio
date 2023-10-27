@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <footer className="footer footer-center p-10 bg-customBgColor text-gray-400 absolute">
       <aside>
-        <img src={beard} width="150px" alt="beard logo"></img>
+        <img src={beard} width="150px" height="150px" alt="beard logo"></img>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
