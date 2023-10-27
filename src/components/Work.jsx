@@ -77,7 +77,7 @@ export default function Work() {
             </p>
           </div>
           <a
-            href="https://drive.google.com/file/d/1h0rNErAuWuMcLIUMiauRiPiWj1YK1bMx/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1Yr5ohb0I_mlffcpZn24ZSC1EShlaVkKQ/view?usp=drive_link"
             aria-label="donwload cv"
             target="_blank"
             rel="noreferrer"
