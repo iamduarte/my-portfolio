@@ -4,7 +4,7 @@ export default function About() {
       <div className="hero min-h-screen">
         <div className="hero-overlay bg-orange-950 bg-opacity-40"></div>
         <div className="mask1 bg-customBgColor w-full h-full lg:pl-96 flex items-center ">
-          <p className="text-xl lg:text-4xl text-gray-300 lg:ml-96 lg:mr-20 mx-10">
+          <p className="text-xl lg:text-4xl text-gray-100 lg:ml-96 lg:mr-20 mx-10">
             Originally hailing from the south of Portugal, I spent 7 solid years
             in the world of mechanical engineering.
             <br />

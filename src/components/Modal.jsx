@@ -25,11 +25,14 @@ export default function Modal(props) {
             </div>
             <div className="lg:w-1/2">
               <a href={props.url} target="_blank" rel="noreferrer">
-                <img
-                  src={props.image}
-                  alt="project"
-                  className="w-3/4 h-3/4 object-contain  mt-16 mx-auto"
-                />
+                <picture>
+                  <source srcSet={props.image} type="image/webp" />
+                  <img
+                    src={props.altImage}
+                    alt={props.title}
+                    className="w-3/4 h-3/4 object-contain  mt-16 mx-auto"
+                  />
+                </picture>
               </a>
             </div>
           </div>

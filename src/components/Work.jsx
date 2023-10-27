@@ -10,20 +10,22 @@ export default function Work() {
       title: "PR Manager Portfolio Website",
       description:
         "A portfolio website for a PR Manager who works in the tech industry, made with Vite, React, TailwindCSS, and deployed on Firebase.",
-      image: "/syanmey2.png",
+      image: "/syanmey.webp",
+      altImage: "/syanmey2.png",
       url: "https://www.syanmey.com/",
     },
     {
       title: "HelpUkraineHub",
       description:
         "A centralized fundraising platform for Ukraine with the goal of gathering as many campaigns as possible in the same place so users can easily browse through them and filter out which ones they want to support based in their purposes, this project was intended to help me get experience with a full-stack project. It was made with React, TailwindCSS, Next.js, MongoDB, and deployed on Firebase. The project is still in development as all de data base implementation is still missing.",
-      image: "/helpukrainehub.png",
+      image: "/helpukrainehub.webp",
+      altImage: "/helpukrainehub.png",
       url: "https://helpukrainehub-cd14b.web.app/",
     },
   ];
 
-  const openModal = (title, description, image, url) => {
-    setModalData({ title, description, image, url });
+  const openModal = (title, description, image, altImage, url) => {
+    setModalData({ title, description, image, altImage, url });
     setIsModalOpen(true);
     // Prevent scrolling
     document.body.style.overflow = "hidden";
@@ -41,15 +43,16 @@ export default function Work() {
       <div className="hero min-h-screen">
         <div className="hero-overlay bg-orange-950 bg-opacity-40"></div>
         <div className="mask2 bg-customBgColor w-full h-full flex items-center lg:justify-evenly flex-col lg:flex-row justify-center">
-          <h1 className="text-gray-300 text-6xl  text-center px-5">
+          <h1 className="text-gray-100 text-6xl  text-center px-5">
             Some of my work
           </h1>
           <p
-            className="text-gray-300 text-2xl mt-20 lg:mt-8 pb-6 cursor-pointer"
+            className="text-gray-100 text-2xl mt-20 lg:mt-8 pb-6 cursor-pointer"
             onClick={() =>
               openModal(
                 works[0].title,
                 works[0].description,
+                works[0].altImage,
                 works[0].image,
                 works[0].url
               )
@@ -58,11 +61,12 @@ export default function Work() {
             PR Manager Portfolio Website
           </p>
           <p
-            className="text-gray-300 text-2xl lg:mt-8 pb-6 cursor-pointer"
+            className="text-gray-100 text-2xl lg:mt-8 pb-6 cursor-pointer"
             onClick={() =>
               openModal(
                 works[1].title,
                 works[1].description,
+                works[1].altImage,
                 works[1].image,
                 works[1].url
               )
@@ -78,6 +82,7 @@ export default function Work() {
             title={modalData.title}
             description={modalData.description}
             image={modalData.image}
+            altImage={modalData.altImage}
             url={modalData.url}
           />
         )}

@@ -14,6 +14,10 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: "Cormorant", sans-serif;
+  /* For browsers supporting WebP */
+  @supports (background-blend-mode: multiply) {
+    background-image: url("/bgimage.webp");
+  }
 }
 
 /* Overlay escurecedor */
@@ -48,7 +52,11 @@ body::before {
   top: 0;
   left: 0;
   /* Apply the animation */
-  animation: moveBackground 600s linear infinite;
+  animation: moveBackground 1000s linear infinite;
+  /* For browsers supporting WebP */
+  @supports (background-blend-mode: multiply) {
+    background-image: url("/fog1.webp");
+  }
 }
 
 .fog2 {
@@ -60,7 +68,11 @@ body::before {
   top: 0;
   left: 0;
   /* Apply the animation */
-  animation: moveBackground 600s linear infinite;
+  animation: moveBackground 1000s linear infinite;
+  /* For browsers supporting WebP */
+  @supports (background-blend-mode: multiply) {
+    background-image: url("/fog2.webp");
+  }
 }
 
 .mask1 {
