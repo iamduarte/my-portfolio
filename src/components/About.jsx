@@ -3,8 +3,8 @@ export default function About() {
     <>
       <div className="hero min-h-screen">
         <div className="hero-overlay bg-orange-950 bg-opacity-40"></div>
-        <div className="mask1 bg-customBgColor w-full h-full lg:pl-96 flex items-center ">
-          <p className="text-xl lg:text-4xl text-gray-100 lg:ml-96 lg:mr-20 mx-10">
+        <div className="mask1 bg-customBgColor w-full h-full flex items-center ">
+          <p className="text-sm min-[300px]:text-xl sm:text-2xl lg:text-4xl text-gray-100  mx-10 lg:mx-52">
             Originally hailing from the south of Portugal, I spent 7 solid years
             in the world of mechanical engineering.
             <br />

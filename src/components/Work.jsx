@@ -17,7 +17,7 @@ export default function Work() {
     {
       title: "HelpUkraineHub",
       description:
-        "A centralized fundraising platform for Ukraine with the goal of gathering as many campaigns as possible in the same place so users can easily browse through them and filter out which ones they want to support based in their purposes, this project was intended to help me get experience with a full-stack project. It was made with React, TailwindCSS, Next.js, MongoDB, and deployed on Firebase. The project is still in development as all de data base implementation is still missing.",
+        "A centralized fundraising platform for Ukraine with the goal of gathering as many campaigns as possible in the same place so users can easily browse through them and filter out which ones they want to support based in their purposes, this project was intended to help me get experience with a full-stack project. It was made with React, TailwindCSS, Next.js, MongoDB, and deployed on Firebase. The project is still in development with some of it's functionality still missing.",
       image: "/helpukrainehub.webp",
       altImage: "/helpukrainehub.png",
       url: "https://helpukrainehub-cd14b.web.app/",
