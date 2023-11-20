@@ -42,7 +42,7 @@ export default function Footer() {
             </svg>
           </a>
           <a
-            href="https://github.com/ozzypt"
+            href="https://github.com/iamduarte"
             target="_blank"
             rel="noreferrer"
             aria-label="github profile"
